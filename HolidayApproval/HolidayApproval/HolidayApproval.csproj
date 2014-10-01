@@ -46,6 +46,10 @@
     <Compile Include="HolidayRequest\Request.cs" />
     <Compile Include="HolidayResponse\Response.cs" />
     <Compile Include="HolidayResponse\Status.cs" />
+    <Compile Include="Mail\Email.cs" />
+    <Compile Include="Mail\EmailClient.cs" />
+    <Compile Include="Mail\EmailClientMock.cs" />
+    <Compile Include="Mail\IEmailClient.cs" />
     <Compile Include="Manager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
