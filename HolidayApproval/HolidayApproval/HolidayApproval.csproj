@@ -46,6 +46,7 @@
     <Compile Include="HolidayRequest\Request.cs" />
     <Compile Include="HolidayResponse\Response.cs" />
     <Compile Include="HolidayResponse\Status.cs" />
+    <Compile Include="Manager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
