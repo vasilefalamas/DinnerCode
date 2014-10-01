@@ -32,7 +32,7 @@ namespace HolidayApproval
 
         private void SendRequest(Request request)
         {
-
+            EmailClientLocator.EmailClient.Send(this.Email, request.ManagerEmail, "Holiday Request Subject", "Holiday Request Body");
         }
     }
 }

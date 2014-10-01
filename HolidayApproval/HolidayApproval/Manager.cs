@@ -1,5 +1,4 @@
-﻿using System.Net.Mail;
-using HolidayApproval.HolidayRequest;
+﻿using HolidayApproval.HolidayRequest;
 using HolidayApproval.HolidayResponse;
 
 namespace HolidayApproval
@@ -32,21 +31,21 @@ namespace HolidayApproval
             };
         }
 
-        private static void Respond(Response response)
+        private void Respond(Response response)
         {
             if (response.Status == Status.Approved)
             {
-                SendEmail();
+                SendEmail("hr_holidays@mailing.com", response);
             }
             else
             {
-                SendEmail();
+                SendEmail(response.InitialRequest.Employee.Email, response);
             }
         }
 
-        private static void SendEmail()
+        private void SendEmail(string recipient, Response response)
         {
-
+            EmailClientLocator.EmailClient.Send(this.Email, recipient, "Holiday Request", response.ToString());
         }
     }
 }
