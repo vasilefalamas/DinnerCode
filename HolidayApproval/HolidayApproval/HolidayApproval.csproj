@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmailClientLocator.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="HolidayRequest\Bounds.cs" />
     <Compile Include="HolidayRequest\Request.cs" />
