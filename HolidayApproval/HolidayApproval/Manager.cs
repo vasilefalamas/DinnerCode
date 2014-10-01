@@ -26,8 +26,7 @@ namespace HolidayApproval
             return new Response
             {
                 InitialRequest = request,
-                Status = status,
-                SignedBy = this.Name
+                Status = status
             };
         }
 
@@ -45,7 +44,7 @@ namespace HolidayApproval
 
         private void SendEmail(string recipient, Response response)
         {
-            EmailClientLocator.EmailClient.Send(this.Email, recipient, "Holiday Request", response.ToString());
+            EmailClientLocator.EmailClient.Send(this.Email, recipient, "Holiday Request was " + response.Status, response.ToString());
         }
     }
 }
