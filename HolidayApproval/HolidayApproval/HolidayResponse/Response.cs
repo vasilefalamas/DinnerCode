@@ -8,6 +8,5 @@ namespace HolidayApproval.HolidayResponse
         public Request InitialRequest { get; set; }
         
         public Status Status { get; set; }
-
     }
 }
