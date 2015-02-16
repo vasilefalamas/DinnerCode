@@ -55,6 +55,7 @@
     <Compile Include="FacebookUriProvider.cs" />
     <Compile Include="GraphApi\Event.cs" />
     <Compile Include="GraphApi\Location.cs" />
+    <Compile Include="GraphApi\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

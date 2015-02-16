@@ -16,6 +16,25 @@ namespace EventsNow.Connectivity
             httpClient = new HttpClient();
         }
 
+        public async Task<User> GetUserDataAsync(AccessToken accessToken)
+        {
+            var response = await httpClient.GetStringAsync(FacebookUriProvider.GetUserNameInfoUri(accessToken));
+
+            JsonObject jsonObject = JsonValue.Parse(response).ToJsonObject();
+
+            var user = new User
+            {
+                Id = Convert.ToInt64(jsonObject.GetValue("id")),
+                FirstName = (string) jsonObject.GetValue("first_name"),
+                MiddleName = (string) jsonObject.GetValue("middle_name"),
+                LastName = (string) jsonObject.GetValue("last_name"),
+                FullName = (string) jsonObject.GetValue("name")
+            };
+
+            return user;
+        }
+
+
         public async Task<Event> GetEventAsync(AccessToken accessToken, string eventId)
         {
             var response = await httpClient.GetStringAsync(FacebookUriProvider.GetEventInfoUri(accessToken, eventId));
