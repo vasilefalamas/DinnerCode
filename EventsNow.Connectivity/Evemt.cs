@@ -13,5 +13,7 @@ namespace EventsNow.Connectivity
         public DateTime? StartDate { get; set; }
 
         public DateTime? EndDate { get; set; }
+
+        public Location Location { get; set; }
     }
 }
