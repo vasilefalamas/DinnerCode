@@ -2,7 +2,7 @@
 
 namespace EventsNow.Connectivity
 {
-    public class Evemt
+    public class Event
     {
         public long Id { get; set; }
 
