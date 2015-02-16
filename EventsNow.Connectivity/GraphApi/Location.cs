@@ -1,4 +1,4 @@
-﻿namespace EventsNow.Connectivity
+﻿namespace EventsNow.Connectivity.GraphApi
 {
     public class Location
     {

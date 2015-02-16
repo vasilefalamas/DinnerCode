@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EventsNow.Connectivity
+namespace EventsNow.Connectivity.GraphApi
 {
     public class Event
     {
