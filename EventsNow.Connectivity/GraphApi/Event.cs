@@ -4,7 +4,7 @@ namespace EventsNow.Connectivity.GraphApi
 {
     public class Event
     {
-        public long Id { get; set; }
+        public string Id { get; set; }
 
         public string Title { get; set; }
 
