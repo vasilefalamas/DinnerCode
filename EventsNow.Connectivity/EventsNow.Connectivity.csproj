@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Authentication\AccessToken.cs" />
     <Compile Include="GraphApi\Event.cs" />
     <Compile Include="GraphApi\Location.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
